@@ -13,3 +13,7 @@ export const getContactsApi=async()=>{
 export const deleteContactApi=async(id)=>{
     return await axios.delete(`${base_url}/contacts/${id}`)
 }
+
+export const editContactApi=async(id,data)=>{
+    return await axios.put(`${base_url}/contacts/${id}`,data)
+}
